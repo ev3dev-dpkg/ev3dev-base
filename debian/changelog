@@ -1,3 +1,9 @@
+ev3dev-base (00.02.00~pre2) wheezy; urgency=low
+
+  * Add ev3dev-i2c package
+
+ -- David Lechner <david@lechnology.com>  Mon, 10 Feb 2014 12:00:11 -0600
+
 ev3dev-base (00.02.00~pre1) wheezy; urgency=low
 
   * Initial Release.
