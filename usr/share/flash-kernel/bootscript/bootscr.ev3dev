@@ -1,0 +1,6 @@
+run loadimage
+fatload mmc 0 ${filesysaddr} uInitrd
+# Comment out the following line to enable kernel messages on input port 1
+setenv console tty7 quiet
+setenv bootargs mem=${memsize} console=${console} initrd=${filesysaddr},${filesyssize} root=/dev/ram rw rootwait lpj=747520 consoleblank=0 splash vt.global-cursor-default=0 vt.default-screen-mode=1 plymouth.ignore-serial-consoles
+bootm ${loadaddr} ${filesysaddr}
