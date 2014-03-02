@@ -12,6 +12,8 @@
 # Description:
 ### END INIT INFO
 
+. /lib/lsb/init-functions
+
 case "$1" in
   start|restart|force-reload)
     echo none > "/sys/class/leds/ev3:red:right/trigger"

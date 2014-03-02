@@ -12,6 +12,8 @@
 # Description:
 ### END INIT INFO
 
+. /lib/lsb/init-functions
+
 start_ev3_bluetooth()
 {
   BT_ADDR=$(/usr/bin/hexdump -e '5/1 "%02X:" "%02X"' -s 0x3f06 -n 6 < /sys/bus/i2c/drivers/at24/1-0050/eeprom)
