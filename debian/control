@@ -1,7 +1,7 @@
 Source: ev3dev-base
 Priority: required
 Maintainer: David Lechner <david@lechnology.com>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), bdf2psf
 Standards-Version: 3.9.4
 Section: embedded
 Homepage: https://github.com/mindboards/ev3dev
@@ -24,6 +24,14 @@ Description: Database entry and boot script for flash-kernel.
  Provides the necessary files so that kernel image packages will get installed
  automatically. Also includes a boot script with all of the required boot
  parameters.
+
+Package: ev3dev-fonts
+Section: embedded
+Architecture: all
+Depends: kbd | console-tools, ${misc:Depends}
+Description: Extra terminal fonts for ev3dev.
+ Provides some extra terminal fonts. They are mostly smaller so that the fit
+ better on the LCD.
 
 Package: ev3dev-i2c
 Section: embedded
@@ -51,12 +59,18 @@ Description: Firmware and scripts for EV3 input port UARTs.
 Package: ev3dev-base
 Section: metapackages
 Architecture: all
-Depends: ev3dev-bluetooth, ev3dev-flash-kernel, ev3dev-i2c, ev3dev-leds,
-         ev3dev-uart
+Depends: ev3dev-bluetooth,
+         ev3dev-flash-kernel,
+         ev3dev-fonts,
+         ev3dev-i2c,
+         ev3dev-leds,
+         ev3dev-uart,
+         ${misc:Depends}
 Description: Meta package that installs all of the required ev3dev packages.
  Includes the following packages:
   - ev3dev-bluetooth
   - ev3dev-flash-kernel
+  - ev3dev-fonts
   - ev3dev-i2c
   - ev3dev-leds
   - ev3dev-pru-uart
