@@ -16,6 +16,14 @@ Description: Firmware and scripts for EV3 bluetooth.
  Provides the firmware and initialization scripts for the on-board bluetooth
  on the LEGO Mindstorms EV3.
 
+Package: ev3dev-console
+Section: embedded
+Architecture: all
+Depends: kbd | console-tools, ${misc:Depends}
+Description: Console releated configuration files and console fonts.
+ Provides some console setup related configuration files and some nice small
+ fonts.
+
 Package: ev3dev-flash-kernel
 Section: embedded
 Architecture: all
@@ -24,14 +32,6 @@ Description: Database entry and boot script for flash-kernel.
  Provides the necessary files so that kernel image packages will get installed
  automatically. Also includes a boot script with all of the required boot
  parameters.
-
-Package: ev3dev-fonts
-Section: embedded
-Architecture: all
-Depends: kbd | console-tools, ${misc:Depends}
-Description: Extra terminal fonts for ev3dev.
- Provides some extra terminal fonts. They are mostly smaller so that the fit
- better on the LCD.
 
 Package: ev3dev-i2c
 Section: embedded
@@ -60,8 +60,8 @@ Package: ev3dev-base
 Section: metapackages
 Architecture: all
 Depends: ev3dev-bluetooth,
+         ev3dev-console,
          ev3dev-flash-kernel,
-         ev3dev-fonts,
          ev3dev-i2c,
          ev3dev-leds,
          ev3dev-uart,
@@ -69,8 +69,8 @@ Depends: ev3dev-bluetooth,
 Description: Meta package that installs all of the required ev3dev packages.
  Includes the following packages:
   - ev3dev-bluetooth
+  - ev3dev-console
   - ev3dev-flash-kernel
-  - ev3dev-fonts
   - ev3dev-i2c
   - ev3dev-leds
   - ev3dev-pru-uart

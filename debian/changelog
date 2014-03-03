@@ -1,6 +1,7 @@
 ev3dev-base (00.02.00~pre3) UNRELEASED; urgency=low
 
   * Add ev3dev-flash-kernel package
+  * Add ev3dev-console package
   * Fix init script warnings
 
  -- David Lechner <david@lechnology.com>  Sat, 01 Mar 2014 23:00:25 -0600
