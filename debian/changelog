@@ -1,4 +1,4 @@
-ev3dev-base (00.02.00~pre3) UNRELEASED; urgency=low
+ev3dev-base (00.02.00~pre3) stable; urgency=low
 
   * Add ev3dev-flash-kernel package
   * Add ev3dev-console package
@@ -6,13 +6,13 @@ ev3dev-base (00.02.00~pre3) UNRELEASED; urgency=low
 
  -- David Lechner <david@lechnology.com>  Sat, 01 Mar 2014 23:00:25 -0600
 
-ev3dev-base (00.02.00~pre2) wheezy; urgency=low
+ev3dev-base (00.02.00~pre2) stable; urgency=low
 
   * Add ev3dev-i2c package
 
  -- David Lechner <david@lechnology.com>  Mon, 10 Feb 2014 12:00:11 -0600
 
-ev3dev-base (00.02.00~pre1) wheezy; urgency=low
+ev3dev-base (00.02.00~pre1) stable; urgency=low
 
   * Initial Release.
 
