@@ -14,7 +14,7 @@ gzipped_psf_fonts: $(GZIPPED_PSF_FONTS)
 
 BDF2PSF_DIR=/usr/share/bdf2psf/
 equivalents=$(BDF2PSF_DIR)standard.equivalents
-symbols=$(BDF2PSF_DIR)required.set+$(BDF2PSF_DIR)fontsets/$(fontset)+:$(BDF2PSF_DIR)useful.set
+symbols=$(BDF2PSF_DIR)linux.set+$(BDF2PSF_DIR)fontsets/$(fontset)+:$(BDF2PSF_DIR)useful.set
 
 $(PSF_FONTS):
 	bdf2psf --fb $(bdf) $(equivalents) $(symbols) $(size) $@
