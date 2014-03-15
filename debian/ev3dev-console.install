@@ -1,2 +1,2 @@
-etc/kbd/config.d/ev3dev.conf
+etc/kbd/config.d/ev3dev
 src/fonts/*.gz usr/share/consolefonts
