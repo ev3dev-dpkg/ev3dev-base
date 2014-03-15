@@ -1,0 +1,1 @@
+/etc/default/udhcpd.ev3dev sed -e '/^DHCPD_ENABLED/ s/DHCPD_ENABLED/#DHCPD_ENABLED/'

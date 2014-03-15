@@ -1,3 +1,16 @@
+ev3dev-base (00.02.00~pre4~2.gbp28eb60) stable; urgency=low
+
+  ** SNAPSHOT build @28eb6025709fdc668862aa57d7f3abc53b3d2ec1 **
+
+  * add git-buildpackage configuration file
+  * fix build on wheezy
+  * Fix order of size parameters in TomThumb font name
+  * Add font to kernel boot parameters
+  * fix ev3dev kbd configuration not taking effect
+  * add ev3dev-udhcpd-config package
+
+ -- David Lechner <david@lechnology.com>  Sat, 15 Mar 2014 13:42:30 -0500
+
 ev3dev-base (00.02.00~pre3) stable; urgency=low
 
   * Add ev3dev-flash-kernel package
