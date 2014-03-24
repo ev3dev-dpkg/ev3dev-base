@@ -1,3 +1,9 @@
+ev3dev-base (1) stable; urgency=low
+
+  * Change versioning scheme 
+
+ -- David Lechner <david@lechnology.com>  Mon, 24 Mar 2014 15:56:33 -0500
+
 ev3dev-base (00.02.00~pre4) stable; urgency=low
 
   * add git-buildpackage configuration file
@@ -11,7 +17,7 @@ ev3dev-base (00.02.00~pre4) stable; urgency=low
   * add ev3dev-udhcpd-config package
   * update boot parameters based on updated kernel
 
- -- David Lechner <david@lechnology.com>  Mon, 24 Mar 2014 13:46:05 -0500
+ -- David Lechner <david@lechnology.com>  Mon, 24 Mar 2014 15:56:18 -0500
 
 ev3dev-base (00.02.00~pre3) stable; urgency=low
 
