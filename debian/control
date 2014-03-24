@@ -49,7 +49,7 @@ Description: Initalization scripts for EV3 LEDs.
 
 Package: ev3dev-uart
 Section: embedded
-Architecture: all
+Architecture: armel
 Depends: ${misc:Depends}
 Description: Firmware and scripts for EV3 input port UARTs.
  Provides the firmware needed for the Soc PRU to implement a UART interface for
@@ -67,7 +67,7 @@ Description: ev3dev configuration for udchpd
 
 Package: ev3dev-base
 Section: metapackages
-Architecture: all
+Architecture: armel
 Depends: ev3dev-bluetooth,
          ev3dev-console,
          ev3dev-flash-kernel,
