@@ -1,7 +1,0 @@
-#!/bin/sh
-
-set -e
-
-#DEBHELPER#
-
-touch /var/lib/misc/udhcpd.leases
