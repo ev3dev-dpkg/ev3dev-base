@@ -1,4 +1,4 @@
 run loadimage
 fatload mmc 0 ${filesysaddr} uInitrd
-setenv bootargs mem=${memsize} console=tty7 console=${console} initrd=${filesysaddr},${filesyssize} root=/dev/ram rw rootwait lpj=747520 quiet splash fbcon=font:ProFont6x11 plymouth.ignore-serial-consoles
+setenv bootargs mem=${memsize} console=${console} initrd=${filesysaddr},${filesyssize} root=/dev/ram rw rootwait lpj=747520 quiet splash fbcon=font:ProFont6x11 plymouth.ignore-serial-consoles
 bootm ${loadaddr} ${filesysaddr}
