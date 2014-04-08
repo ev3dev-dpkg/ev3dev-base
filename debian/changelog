@@ -1,3 +1,10 @@
+ev3dev-base (2) stable; urgency=low
+
+  * remove udhcpd-config package
+  * remove tty7 as primary console
+
+ -- David Lechner <david@lechnology.com>  Mon, 07 Apr 2014 23:04:32 -0500
+
 ev3dev-base (1) stable; urgency=low
 
   * Change versioning scheme 
