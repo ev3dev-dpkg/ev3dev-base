@@ -1,3 +1,10 @@
+ev3dev-base (3) stable; urgency=low
+
+  * add ev3dev-ports package
+  * remove quiet kernel boot parameter
+
+ -- David Lechner <david@lechnology.com>  Wed, 09 Apr 2014 10:27:31 -0500
+
 ev3dev-base (2) stable; urgency=low
 
   * remove udhcpd-config package
