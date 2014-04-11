@@ -35,7 +35,7 @@ Description: Database entry and boot script for flash-kernel.
 
 Package: ev3dev-i2c
 Section: embedded
-Architecture: all
+Architecture: armel
 Depends: ${misc:Depends}
 Description: Udev rules for I2C devices.
  Provides udev rules for the input port I2C devices.
