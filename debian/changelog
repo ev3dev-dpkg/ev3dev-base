@@ -1,4 +1,4 @@
-ev3dev-base (4) saucy; urgency=low
+ev3dev-base (4) stable; urgency=low
 
   * change arch on ev3dev-i2c package
 

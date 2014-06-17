@@ -1,0 +1,3 @@
+# LEGO MINDSTORMS EV3 built-in bluetooth
+KERNEL=="legoev3-bluetooth", ACTION=="add", TAG+="systemd", \
+    ENV{SYSTEMD_WANTS}="legoev3-bluetooth.service"

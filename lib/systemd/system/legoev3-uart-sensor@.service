@@ -1,0 +1,8 @@
+[Unit]
+Description=LEGO MINDSTORMS EV3 UART Sensors
+BindsTo=sys-devices-platform-legoev3\x2dports-%i-%i:ev3\x2duart\x2dhost.device
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/ldattach -d 29 /dev/tty_%I
+

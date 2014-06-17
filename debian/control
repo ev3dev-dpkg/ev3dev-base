@@ -1,7 +1,8 @@
 Source: ev3dev-base
 Priority: required
 Maintainer: David Lechner <david@lechnology.com>
-Build-Depends: debhelper (>= 8.0.0), config-package-dev, bdf2psf
+Build-Depends: debhelper (>= 8.0.0), dh-systemd (>= 1.5),
+               config-package-dev, bdf2psf
 Standards-Version: 3.9.4
 Section: embedded
 Homepage: https://github.com/mindboards/ev3dev
