@@ -1,3 +1,9 @@
+ev3dev-base (5) testing; urgency=low
+
+  * changes for jessie/systemd
+
+ -- David Lechner <david@lechnology.com>  Mon, 16 Jun 2014 23:12:49 -0500
+
 ev3dev-base (4) stable; urgency=low
 
   * change arch on ev3dev-i2c package
