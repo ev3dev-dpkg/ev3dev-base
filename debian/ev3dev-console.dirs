@@ -1,2 +1,3 @@
 etc/kbd/config.d/
+lib/systemd/system/
 usr/share/consolefonts/

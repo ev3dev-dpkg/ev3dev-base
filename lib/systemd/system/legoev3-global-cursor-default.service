@@ -1,0 +1,14 @@
+# change global cursor default to on. It is disabled in the kernel so that it
+# does not show up the boot splash screen.
+
+[Unit]
+Description=Turn on global VT cursor
+Before=getty.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c '/bin/echo 1 > /sys/module/vt/parameters/global_cursor_default'
+
+[Install]
+WantedBy=getty.target
+
