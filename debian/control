@@ -34,6 +34,12 @@ Description: Database entry and boot script for flash-kernel.
  automatically. Also includes a boot script with all of the required boot
  parameters.
 
+Package: ev3dev-gadget
+Section: embedded
+Architecture: armel
+Depends: ${misc:Depends}
+Description: systemd services for starting/stopping USB Ethernet gadget modules.
+
 Package: ev3dev-i2c
 Section: embedded
 Architecture: armel
@@ -71,17 +77,10 @@ Architecture: armel
 Depends: ev3dev-bluetooth,
          ev3dev-console,
          ev3dev-flash-kernel,
+         ev3dev-gadget,
          ev3dev-i2c,
          ev3dev-leds,
          ev3dev-ports,
          ev3dev-uart,
          ${misc:Depends}
 Description: Meta package that installs all of the required ev3dev packages.
- Includes the following packages:
-  - ev3dev-bluetooth
-  - ev3dev-console
-  - ev3dev-flash-kernel
-  - ev3dev-i2c
-  - ev3dev-leds
-  - ev3dev-ports
-  - ev3dev-uart

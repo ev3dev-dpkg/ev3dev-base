@@ -1,0 +1,13 @@
+[Unit]
+Description=RNDIS Ethernet USB gadget service
+Conflicts=gadget-cdc.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/sbin/modprobe g_ether
+ExecStop=/sbin/rmmod g_ether
+
+[Install]
+WantedBy=basic.target
+
