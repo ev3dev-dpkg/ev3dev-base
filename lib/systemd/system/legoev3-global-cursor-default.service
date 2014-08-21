@@ -7,6 +7,7 @@ Before=getty.target
 
 [Service]
 Type=oneshot
+ExecStartPre=-/bin/sh -c '/bin/echo -n -e "\033[?25h" > /dev/tty0'
 ExecStart=/bin/sh -c '/bin/echo 1 > /sys/module/vt/parameters/global_cursor_default'
 
 [Install]
