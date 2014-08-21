@@ -4,5 +4,5 @@ BindsTo=sys-devices-platform-legoev3\x2dbluetooth.device
 
 [Service]
 Type=simple
-ExecStart=/usr/sbin/hciattach -n /dev/ttyS2 texas 2000000 noflow nosleep
+ExecStart=/usr/bin/hciattach -n /dev/ttyS2 texas 2000000 noflow nosleep
 

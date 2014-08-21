@@ -12,7 +12,7 @@ Vcs-Browser: https://github.com/mindbaords/ev3dev-base
 Package: ev3dev-bluetooth
 Section: embedded
 Architecture: armel
-Depends: bluez, bsdmainutils, ${misc:Depends}
+Depends: bluez (>= 5), bsdmainutils, ${misc:Depends}
 Description: Firmware and scripts for EV3 bluetooth.
  Provides the firmware and initialization scripts for the on-board bluetooth
  on the LEGO Mindstorms EV3.
