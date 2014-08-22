@@ -1,3 +1,4 @@
 etc/kbd/config.d/ev3dev
 lib/systemd/system/legoev3-global-cursor-default.service
+lib/systemd/system/console-setup.service
 src/fonts/*.gz usr/share/consolefonts
