@@ -1,9 +1,9 @@
 [Unit]
 Description=LEGO MINDSTORMS EV3 LEDs
-After=systemd-user-sessions.service
+After=multi-user.target
 
 [Install]
-WantedBy=systemd-user-sessions.service
+WantedBy=multi-user.target
 
 [Service]
 Type=oneshot
