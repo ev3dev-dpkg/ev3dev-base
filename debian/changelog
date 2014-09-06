@@ -1,3 +1,17 @@
+ev3dev-base (7) testing; urgency=medium
+
+  * [console] Add console-setup.service
+  * [gadget] rndis-gadget.service and cdc-gadget.service are now disabled by
+    by default.
+  * [bluetooth] Longer timeout so hciattach does not fail when boot is extra
+    busy (i.e. sensors plugged in)
+  * [leds] Turn green later in boot and use max brightness value. Add udev rule
+    to enable ev3dev group write permission to LEDs.
+  * [ports] Add udev rule to enable ev3dev group write permission to port
+    devices (msensor and tacho-motor classes)
+
+ -- David Lechner <david@lechnology.com>  Fri, 22 Aug 2014 19:45:19 -0500
+
 ev3dev-base (6) testing; urgency=medium
 
   * add ev3dev-gadget package
