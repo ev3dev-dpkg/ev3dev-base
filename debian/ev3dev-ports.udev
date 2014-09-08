@@ -2,3 +2,4 @@
 
 SUBSYSTEM=="msensor|tacho-motor", ACTION=="add", \
 	RUN+="/usr/bin/find /sys$devpath -maxdepth 1 -not -name uevent -type f -exec /bin/chmod g+u {} + -exec /bin/chown :ev3dev {} +"
+	

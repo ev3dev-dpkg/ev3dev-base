@@ -9,4 +9,3 @@ KERNEL=="ttySU0", SYMLINK+="tty_in4"
 SUBSYSTEM=="legoev3", ENV{DEVTYPE}=="ev3-uart-host", SUBSYSTEMS=="legoev3", \
     DRIVERS=="ev3-input-port", ACTION=="add", TAG+="systemd", \
     ENV{SYSTEMD_WANTS}="legoev3-uart-sensor@$id.service"
-

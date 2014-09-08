@@ -2,3 +2,4 @@
 
 SUBSYSTEM=="leds", KERNEL=="ev3*", ACTION=="add|change", \
 	RUN+="/usr/bin/find /sys$devpath -maxdepth 1 -not -name uevent -type f -exec /bin/chmod g+u {} + -exec /bin/chown :ev3dev {} +"
+	
