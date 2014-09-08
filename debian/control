@@ -74,13 +74,13 @@ Description: Firmware and scripts for EV3 input port UARTs.
 Package: ev3dev-base
 Section: metapackages
 Architecture: armel
-Depends: ev3dev-bluetooth,
-         ev3dev-console,
-         ev3dev-flash-kernel,
-         ev3dev-gadget,
-         ev3dev-i2c,
-         ev3dev-leds,
-         ev3dev-ports,
-         ev3dev-uart,
+Depends: ev3dev-bluetooth (>= ${binary:Version}),
+         ev3dev-console (>= ${binary:Version}),
+         ev3dev-flash-kernel (>= ${binary:Version}),
+         ev3dev-gadget (>= ${binary:Version}),
+         ev3dev-i2c (>= ${binary:Version}),
+         ev3dev-leds (>= ${binary:Version}),
+         ev3dev-ports (>= ${binary:Version}),
+         ev3dev-uart (>= ${binary:Version}),
          ${misc:Depends}
 Description: Meta package that installs all of the required ev3dev packages.
