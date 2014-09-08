@@ -1,3 +1,10 @@
+ev3dev-base (7.1) testing; urgency=medium
+
+  * add newline to end of udev rules to prevent systemd-udev error
+  * make sure upgrading ev3dev-base upgrades everything else
+
+ -- David Lechner <david@lechnology.com>  Mon, 08 Sep 2014 10:54:53 -0500
+
 ev3dev-base (7) testing; urgency=medium
 
   * [console] Add console-setup.service
