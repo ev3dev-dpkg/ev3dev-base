@@ -1,6 +1,6 @@
 [Unit]
 Description=CDC Ethernet USB gadget service
-Conflicts=gadget-rndis.service
+Conflicts=rndis-gadget.service
 
 [Service]
 Type=oneshot
