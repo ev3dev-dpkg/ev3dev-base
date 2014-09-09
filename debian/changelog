@@ -1,3 +1,9 @@
+ev3dev-base (7.2) testing; urgency=medium
+
+  * [gadget] fix service conflicts
+
+ -- David Lechner <david@lechnology.com>  Tue, 09 Sep 2014 14:31:32 -0500
+
 ev3dev-base (7.1) testing; urgency=medium
 
   * add newline to end of udev rules to prevent systemd-udev error
