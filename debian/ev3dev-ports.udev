@@ -1,5 +1,5 @@
-# sets permissions so ev3dev group can control sensors and motors
+# sets permissions so ev3dev group can control legoev3 bus devices, sensors and motors
 
-SUBSYSTEM=="msensor|tacho-motor", ACTION=="add", \
+SUBSYSTEM=="legoev3|msensor|tacho-motor|servo-motor|dc-motor", ACTION=="add", \
 	RUN+="/usr/bin/find /sys$devpath -maxdepth 1 -not -name uevent -type f -exec /bin/chmod g+u {} + -exec /bin/chown :ev3dev {} +"
 	
