@@ -1,3 +1,10 @@
+ev3dev-base (7.3) testing; urgency=medium
+
+  * [ports] add legoev3 bus, servo-motor and dc-motor to subsystems that have ev3dev group permissions
+  * change pre- to postinst to prevent breakage in brickstrap
+
+ -- David Lechner <david@lechnology.com>  Tue, 30 Sep 2014 12:46:02 -0500
+
 ev3dev-base (7.2) testing; urgency=medium
 
   * [gadget] fix service conflicts
