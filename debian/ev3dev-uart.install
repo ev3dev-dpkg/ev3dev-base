@@ -1,3 +1,2 @@
 /lib/firmware/PRU_SUART.bin
-/lib/systemd/system/legoev3-uart-sensor@.service
-
+/lib/systemd/system/ev3dev-uart@.service
