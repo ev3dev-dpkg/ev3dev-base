@@ -1,5 +1,5 @@
-# sets permissions so ev3dev group can control legoev3 bus devices, sensors and motors
+# This file is part of the ev3dev-ports package.
 
-SUBSYSTEM=="legoev3|msensor|tacho-motor|servo-motor|dc-motor", ACTION=="add", \
+# Set permissions so ev3dev group can control lego bus devices, ports, sensors and motors
+SUBSYSTEM=="lego|lego-port|lego-sensor|tacho-motor|servo-motor|dc-motor", ACTION=="add", \
 	RUN+="/usr/bin/find /sys$devpath -maxdepth 1 -not -name uevent -type f -exec /bin/chmod g+u {} + -exec /bin/chown :ev3dev {} +"
-	

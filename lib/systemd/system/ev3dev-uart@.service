@@ -1,8 +1,10 @@
+# This file is part of the ev3dev-uart package
+
 [Unit]
 Description=LEGO MINDSTORMS EV3 UART Sensors
-BindsTo=sys-devices-platform-legoev3\x2dports-%i-%i:ev3\x2duart\x2dhost.device
+# This is the alias created by the ev3dev-uart udev rule.
+BindsTo=sys-subsystem-lego-devices-ev3_uart_host_%i.device
 
 [Service]
 Type=simple
 ExecStart=/usr/sbin/ldattach -d 29 /dev/tty_%I
-
