@@ -3,11 +3,11 @@ Priority: required
 Maintainer: David Lechner <david@lechnology.com>
 Build-Depends: debhelper (>= 8.0.0), dh-systemd (>= 1.5),
                config-package-dev, bdf2psf
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Section: embedded
-Homepage: https://github.com/mindboards/ev3dev
-Vcs-Git: git://github.com/mindboards/ev3dev-base.git
-Vcs-Browser: https://github.com/mindbaords/ev3dev-base
+Homepage: http://www.ev3dev.org
+Vcs-Git: git://github.com/ev3dev/ev3dev-base.git
+Vcs-Browser: https://github.com/ev3dev/ev3dev-base
 
 Package: ev3dev-bluetooth
 Section: embedded
