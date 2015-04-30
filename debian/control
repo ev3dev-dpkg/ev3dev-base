@@ -83,4 +83,5 @@ Depends: ev3dev-bluetooth (>= ${binary:Version}),
          ev3dev-ports (>= ${binary:Version}),
          ev3dev-uart (>= ${binary:Version}),
          ${misc:Depends}
+Breaks: linux-image-ev3dev
 Description: Meta package that installs all of the required ev3dev packages.
