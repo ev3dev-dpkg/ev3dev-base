@@ -1,3 +1,12 @@
+ev3dev-base (9.0) stable; urgency=medium
+
+  * [flash-kernel] Add kernel flavor to db to prevent accidentally loading of other kernels.
+  * Remove all debian/*.dirs
+  * [flash-kernel] Remove initrd references.
+  * [console] Add dependency on getty.target to console-setup.service
+
+ -- David Lechner <david@lechnology.com>  Fri, 01 May 2015 16:53:46 -0500
+
 ev3dev-base (8.0) testing; urgency=medium
 
   * [ev3dev-leds] rename "legoev3-leds.service" to "ev3dev-leds.service"
