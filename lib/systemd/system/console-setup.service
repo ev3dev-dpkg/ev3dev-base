@@ -4,7 +4,9 @@
 
 [Unit]
 Description=Set console font and keymap
-Requires=remote-fs.target
+DefaultDependencies=no
+After=systemd-user-sessions.service
+Before=getty.target
 
 [Service]
 Type=oneshot
@@ -12,4 +14,4 @@ ExecStart=/bin/setupcon --save
 
 [Install]
 Alias=systemd-vconsole-setup.service
-
+WantedBy=getty.target
