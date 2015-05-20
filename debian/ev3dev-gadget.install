@@ -1,2 +1,0 @@
-lib/systemd/system/cdc-gadget.service
-lib/systemd/system/rndis-gadget.service

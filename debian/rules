@@ -10,11 +10,4 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --with config-package,systemd
-
-override_dh_systemd_enable:
-	dh_systemd_enable -pev3dev-gadget --no-enable
-	dh_systemd_enable --remaining-packages
-
-override_dh_systemd_start:
-	dh_systemd_start --no-start --no-restart-on-upgrade
+	dh $@

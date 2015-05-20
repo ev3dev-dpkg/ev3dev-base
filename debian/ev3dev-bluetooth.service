@@ -1,9 +1,0 @@
-[Unit]
-Description=LEGO MINDSTORMS EV3 Bluetooth
-# TODO: This binding does not actually do anything useful. What we really want
-# to do is kill hciattach when the enable attribute of this device is set to 0.
-BindsTo=sys-devices-platform-legoev3\x2dbluetooth.device
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/hciattach -n -t 30 /dev/ttyS2 texas 2000000 noflow nosleep

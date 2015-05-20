@@ -1,5 +1,0 @@
-#!/bin/sh
-
-/usr/sbin/groupadd --force --system ev3dev
-
-#DEBHELPER#

@@ -1,87 +1,18 @@
 Source: ev3dev-base
-Priority: required
+Priority: optional
 Maintainer: David Lechner <david@lechnology.com>
-Build-Depends: debhelper (>= 8.0.0), dh-systemd (>= 1.5),
-               config-package-dev, bdf2psf
+Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.5
 Section: embedded
 Homepage: http://www.ev3dev.org
 Vcs-Git: git://github.com/ev3dev/ev3dev-base.git
 Vcs-Browser: https://github.com/ev3dev/ev3dev-base
 
-Package: ev3dev-bluetooth
-Section: embedded
-Architecture: armel
-Depends: bluez (>= 5), bsdmainutils, ${misc:Depends}
-Description: Firmware and scripts for EV3 bluetooth.
- Provides the firmware and initialization scripts for the on-board bluetooth
- on the LEGO Mindstorms EV3.
-
-Package: ev3dev-console
-Section: embedded
-Architecture: armel
-Depends: kbd | console-tools, ${misc:Depends}
-Description: Console related configuration files and console fonts.
- Provides some console setup related configuration files and some nice small
- fonts.
-
-Package: ev3dev-flash-kernel
-Section: embedded
-Architecture: armel
-Depends: u-boot-tools, flash-kernel, ${misc:Depends}
-Description: Database entry and boot script for flash-kernel.
- Provides the necessary files so that kernel image packages will get installed
- automatically. Also includes a boot script with all of the required boot
- parameters.
-
-Package: ev3dev-gadget
-Section: embedded
-Architecture: armel
-Depends: ${misc:Depends}
-Description: systemd services for starting/stopping USB Ethernet gadget modules.
-
-Package: ev3dev-i2c
-Section: embedded
-Architecture: armel
-Depends: ${misc:Depends}
-Description: Udev rules for I2C devices.
- Provides udev rules for the input port I2C devices.
-
-Package: ev3dev-leds
-Section: embedded
-Architecture: armel
-Depends: ${misc:Depends}
-Description: Initialization scripts for EV3 LEDs.
- Provides init script for the built-in LEDs on the LEGO Mindstorms EV3.
-
-Package: ev3dev-ports
-Section: embedded
-Architecture: armel
-Depends: ${misc:Depends}
-Description: Scripts related to the EV3 input and output ports
- Provides scripts to enable and disable debugging via the serial port on input
- port 1.
-
-Package: ev3dev-uart
-Section: embedded
-Architecture: armel
-Depends: ${misc:Depends}
-Description: Firmware and scripts for EV3 input port UARTs.
- Provides the firmware needed for the Soc PRU to implement a UART interface for
- input ports 3 and 4 on the LEGO Mindstorms EV3. Also includes udev rules for
- starting and stopping the UARTs on all 4 input ports.
-
 Package: ev3dev-base
 Section: metapackages
 Architecture: armel
-Depends: ev3dev-bluetooth (>= ${binary:Version}),
-         ev3dev-console (>= ${binary:Version}),
-         ev3dev-flash-kernel (>= ${binary:Version}),
-         ev3dev-gadget (>= ${binary:Version}),
-         ev3dev-i2c (>= ${binary:Version}),
-         ev3dev-leds (>= ${binary:Version}),
-         ev3dev-ports (>= ${binary:Version}),
-         ev3dev-uart (>= ${binary:Version}),
-         ${misc:Depends}
-Breaks: linux-image-ev3dev
+Depends: ev3-config, firmware-ev3, ev3-systemd, ${misc:Depends}
+Breaks: linux-image-ev3dev (<= 18)
+Conflicts: ev3dev-flash-kernel
 Description: Meta package that installs all of the required ev3dev packages.
+ This package is only useful for LEGO MINDSTORMS EV3 running an ev3dev kernel.

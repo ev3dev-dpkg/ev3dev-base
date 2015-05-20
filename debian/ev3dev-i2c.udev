@@ -1,4 +1,0 @@
-KERNEL=="i2c-3", SYMLINK+="i2c-in1"
-KERNEL=="i2c-4", SYMLINK+="i2c-in2"
-KERNEL=="i2c-5", SYMLINK+="i2c-in3"
-KERNEL=="i2c-6", SYMLINK+="i2c-in4"
