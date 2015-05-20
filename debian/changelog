@@ -1,3 +1,9 @@
+ev3dev-base (10.0) stable; urgency=medium
+
+  * Remove all binary packages except for ev3dev-base.
+
+ -- David Lechner <david@lechnology.com>  Wed, 20 May 2015 15:55:59 -0500
+
 ev3dev-base (9.0) stable; urgency=medium
 
   * [flash-kernel] Add kernel flavor to db to prevent accidentally loading of other kernels.
